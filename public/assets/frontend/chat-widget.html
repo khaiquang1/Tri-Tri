@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<!-- saved from url=(0326)https://sp.zalo.me/plugins/chat-widget?position=null&oaid=2287807111989763657&welcomemessage=Tritri%20r%E1%BA%A5t%20s%E1%BA%B5n%20s%C3%A0ng%20%C4%91%E1%BB%83%20ph%E1%BB%A5c%20v%E1%BB%A5%20b%E1%BA%A1n&autopopup=0&width=350&height=420&style=2&id=339d21e5-3dc0-4d54-b20b-636549b36e73&domain=www.tritri.org&android=false&ios=false -->
+<html class="no-touch"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title>Chat Button</title>
+        <script src="./sdk-server-1.0.0.js.tải xuống"></script>
+        <link href="./main-1.3.8.css" rel="stylesheet">
+        <style>
+            html, body {
+                background-color: transparent !important;
+                overflow: hidden;
+            }
+        </style>
+    <style type="text/css">/*
+ * contextMenu.js v 1.4.0
+ * Author: Sudhanshu Yadav
+ * s-yadav.github.com
+ * Copyright (c) 2013 Sudhanshu Yadav.
+ * Dual licensed under the MIT and GPL licenses
+**/
+
+.iw-contextMenu {
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.10) !important;
+    border: 1px solid #c8c7cc !important;
+    border-radius: 11px !important;
+    display: none;
+    z-index: 1000000132;
+    max-width: 300px !important;
+    width: auto !important;
+}
+
+.dark-mode .iw-contextMenu,
+.TnITTtw-dark-mode.iw-contextMenu,
+.TnITTtw-dark-mode .iw-contextMenu {
+    border-color: #747473 !important;
+}
+
+.iw-cm-menu {
+    background: #fff !important;
+    color: #000 !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    overflow: visible !important;
+}
+
+.dark-mode .iw-cm-menu,
+.TnITTtw-dark-mode.iw-cm-menu,
+.TnITTtw-dark-mode .iw-cm-menu {
+    background: #525251 !important;
+    color: #FFF !important;
+}
+
+.iw-curMenu {
+}
+
+.iw-cm-menu li {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, Ubuntu, sans-serif !important;
+    list-style: none !important;
+    padding: 10px !important;
+    padding-right: 20px !important;
+    border-bottom: 1px solid #c8c7cc !important;
+    font-weight: 400 !important;
+    cursor: pointer !important;
+    position: relative !important;
+    font-size: 14px !important;
+    margin: 0 !important;
+    line-height: inherit !important;
+    border-radius: 0 !important;
+    display: block !important;
+}
+
+.dark-mode .iw-cm-menu li, .TnITTtw-dark-mode .iw-cm-menu li {
+    border-bottom-color: #747473 !important;
+}
+
+.iw-cm-menu li:first-child {
+    border-top-left-radius: 11px !important;
+    border-top-right-radius: 11px !important;
+}
+
+.iw-cm-menu li:last-child {
+    border-bottom-left-radius: 11px !important;
+    border-bottom-right-radius: 11px !important;
+    border-bottom: none !important;
+}
+
+.iw-mOverlay {
+    position: absolute !important;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0px !important;
+    left: 0px !important;
+    background: #FFF !important;
+    opacity: .5 !important;
+}
+
+.iw-contextMenu li.iw-mDisable {
+    opacity: 0.3 !important;
+    cursor: default !important;
+}
+
+.iw-mSelected {
+    background-color: #F6F6F6 !important;
+}
+
+.dark-mode .iw-mSelected, .TnITTtw-dark-mode .iw-mSelected {
+    background-color: #676766 !important;
+}
+
+.iw-cm-arrow-right {
+    width: 0 !important;
+    height: 0 !important;
+    border-top: 5px solid transparent !important;
+    border-bottom: 5px solid transparent !important;
+    border-left: 5px solid #000 !important;
+    position: absolute !important;
+    right: 5px !important;
+    top: 50% !important;
+    margin-top: -5px !important;
+}
+
+.dark-mode .iw-cm-arrow-right, .TnITTtw-dark-mode .iw-cm-arrow-right {
+    border-left-color: #FFF !important;
+}
+
+.iw-mSelected > .iw-cm-arrow-right {
+}
+
+/*context menu css end */</style><style type="text/css">@-webkit-keyframes load4 {
+    0%,
+    100% {
+        box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+    }
+    12.5% {
+        box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+    }
+    25% {
+        box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+    }
+    37.5% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    50% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    62.5% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+    }
+    75% {
+        box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+    }
+    87.5% {
+        box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+    }
+}
+
+@keyframes load4 {
+    0%,
+    100% {
+        box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+    }
+    12.5% {
+        box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+    }
+    25% {
+        box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+    }
+    37.5% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    50% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    62.5% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+    }
+    75% {
+        box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+    }
+    87.5% {
+        box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+    }
+}</style><style type="text/css">/* This is not a zero-length file! */</style></head>
+    <body>
+        <script>
+            var zsp_oaid = '2287807111989763657';
+            var zsp_welcome = 'Tritri rất sẵn sàng để phục vụ bạn';
+            var zsp_auto = 0;
+            var zsp_width = 350;
+            var zsp_height= 420;
+            window.styleClosedChatBox = 2;
+            if(!window.styleClosedChatBox) {
+                window.styleClosedChatBox = 1;
+            } else if (window.styleClosedChatBox != 1 && window.styleClosedChatBox != 2) { 
+                window.styleClosedChatBox = 1;
+            }
+            window.oaInfo = [{"menuData":"http:\/\/www.tritri.org\/lien-he","menuStatus":1,"listSubMenu":[],"menuId":910968,"menuType":10,"menuName":"Liên hệ ngay"}] || [];
+            var w = 0;
+            var h = 0;
+
+            var widthBoxClosed = 70;
+            var widthBoxClosedWithToolTip = 280;
+            var heightBoxClosed = 70;
+
+           function openChat() {
+            ZSDKServer.postMessage('zchat_widget_open_chat_box', {
+                width: zsp_width,
+                height: zsp_height
+            });
+            w = zsp_width;
+            h = zsp_height;
+        }
+
+        function closeChat() {
+            if(window.styleClosedChatBox == 1) {
+                ZSDKServer.postMessage('zchat_widget_close_chat_box', {
+                    width: 256, 
+                    height: 46 
+                });
+                w = 256; 
+                h = 46; 
+            } else {
+                ZSDKServer.postMessage('zchat_widget_close_chat_box', {
+                    width: widthBoxClosedWithToolTip || widthBoxClosed,
+                    height: heightBoxClosed
+                });
+                w = widthBoxClosedWithToolTip || widthBoxClosed;
+                h = heightBoxClosed;
+            }
+        }
+
+        function closeChatBoxTooltip() {
+            widthBoxClosedWithToolTip = null;
+            w = widthBoxClosed;
+            h = heightBoxClosed;
+            closeChat();
+        }
+
+        function showSticker() {
+            ZSDKServer.postMessage('zchat_widget_toggle_sticker', {
+                width: zsp_width,
+                height: zsp_height
+            });
+            w = zsp_width;
+            h = zsp_height;
+        }
+
+        function closeSticker() {
+            ZSDKServer.postMessage('zchat_widget_toggle_sticker', {
+                width: zsp_width,
+                height: zsp_height
+            });
+            w = zsp_width;
+            h = zsp_height;
+        }
+
+        function showLightbox() {
+            ZSDKServer.postMessage('zchat_widget_show_light_box', {
+                width: '100%',
+                height: '100%',
+                isDiv: true
+            });
+        }
+
+        function closeLightbox() {
+            ZSDKServer.postMessage('zchat_widget_close_light_box', {
+                width: w,
+                height: h,
+                isDiv: true
+            });
+        }
+
+        function openUrl(url) {
+            ZSDKServer.postMessage('zsdk_newtab', {
+                url: url
+            });
+        }
+
+
+        window.onload = function () {
+            ZSDKServer.init();
+
+        };
+        </script>
+        <div id="zoa_widget" class="zs"><div class="zs-wrap-widget" style="height: auto; width: calc(100% - 6px); top: 10px; left: 3px;"><div class="zs-container "><div class="zs-tooltips-container " id="zsToolTips"><span id="block-with-text" style="display: flex; align-items: center;"><i class="zs-icon"><i class="zs-ic zs-ic-move"></i></i><div style="max-height: 38px; line-height: 19px; overflow: hidden;">Chat với Tritrigroup!</div></span></div><i class="zs-ico zs-logined" id="button-main"><div class="zs-ico-main"></div><em></em></i></div><iframe src="./embed.html" style="width: 0px; height: 0px; border: 0px;"></iframe></div></div>
+        <script type="text/javascript" src="./main-1.3.8.js.tải xuống"></script>
+    
+</body></html>
