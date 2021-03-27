@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Admin\Feature;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
+use Mews\Purifier\Facades\Purifier;
 
 class FeatureController extends Controller
 {
@@ -34,6 +35,7 @@ class FeatureController extends Controller
         // Form validation
         $request->validate([
             'order' => 'required|integer',
+            'desc'   =>  'required',
             'feature_image' => 'mimes:svg,png,jpeg,jpg|max:2048',
         ]);
 
@@ -67,7 +69,7 @@ class FeatureController extends Controller
             'language_id' => getLanguage()->id,
             'feature_image' => $input['feature_image'],
             'title' => $input['title'],
-            'desc' => $input['desc'],
+            'desc' => Purifier::clean($input['desc']),
             'btn_link' => $input['btn_link'],
             'order' => $input['order']
         ]);

@@ -31,6 +31,7 @@ use App\Models\Admin\TeamSection;
 use App\Models\Admin\Testimonial;
 use App\Models\Admin\TestimonialSection;
 use App\Models\Admin\Category;
+use DB;
 
 class HomeController extends Controller
 {
@@ -80,7 +81,8 @@ class HomeController extends Controller
             ->where('categories.language_id', $language->id)
             ->orderBy('blogs.id', 'desc')
             ->take(3)
-            ->get();   
+            ->get();  
+        $videos = DB::table('videos')->take(8)->get(); 
 
         $contact_section = ContactSection::where('language_id', $language->id)->first();
         $contacts = Contact::where('language_id', $language->id)->orderBy('order', 'asc')->get();
@@ -92,7 +94,7 @@ class HomeController extends Controller
             'socials', 'sliders', 'features', 'about', 'counters', 'service_section', 'services',
             'team_section', 'teams', 'skill_section', 'skills', 'project_section', 'projects',
             'sponsors', 'testimonial_section', 'testimonials', 'blog_section', 'recent_posts',
-            'faq_section', 'faqs', 'prices', 'contact_section', 'contacts', 'pages', 'color_option', 'new_posts','categories'));
+            'faq_section', 'faqs', 'prices', 'contact_section', 'contacts', 'pages', 'color_option', 'new_posts','categories', 'videos'));
     }
 
     public function about_us(){
@@ -159,8 +161,21 @@ class HomeController extends Controller
 
     public function recruitments(){
         $language = getSiteLanguage();
-        $pages = Page::where('language_id', $language->id)->where('status', 1)->orderBy('order', 'asc')->get();
+        $pages = Page::where('language_id', $language->id)->where('status', 1)->orderBy('order', 'asc')->take(1)->get();
+       
         return view('frontend.page.recruitment', compact('pages'));
+    }
+
+
+    public function field($id){
+
+        $language = getSiteLanguage();
+        $videos = DB::table('videos')->where('category_id',$id)->get(); 
+        $news = DB::table('blogs')
+        ->where('category_id',$id)->get();
+        $categories = Category::where('language_id', $language->id)->where('id',$id)->get();
+        // $categories = DB::table('categories')->where('id',$id)->get();
+        return view('frontend.fields.field', compact('videos', 'news', 'categories'));
     }
 
    

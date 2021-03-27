@@ -58,7 +58,6 @@ return array(
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
     'App\\Http\\Controllers\\Frontend\\BlogController' => $baseDir . '/app/Http/Controllers/Frontend/BlogController.php',
     'App\\Http\\Controllers\\Frontend\\CommentController' => $baseDir . '/app/Http/Controllers/Frontend/CommentController.php',
-    'App\\Http\\Controllers\\Frontend\\GalleryController' => $baseDir . '/app/Http/Controllers/Frontend/GalleryController.php',
     'App\\Http\\Controllers\\Frontend\\HomeController' => $baseDir . '/app/Http/Controllers/Frontend/HomeController.php',
     'App\\Http\\Controllers\\Frontend\\PageController' => $baseDir . '/app/Http/Controllers/Frontend/PageController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',

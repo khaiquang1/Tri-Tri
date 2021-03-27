@@ -9,7 +9,7 @@
       <li><a  href="{{URL::to('/about-us')}}" target="_self">Giới thiệu</a></li>
       <li><a class="active" href="{{URL::to('/fields-of-operation')}}" target="_self">Lĩnh vực hoạt động</a></li>
       <li><a  href="{{URL::to('/news')}}" target="_self">Tin tức</a></li>
-      <li><a href="{{URL::to('/contact')}}" target="_self">Tuyển dụng</a></li>
+      <li><a href="{{URL::to('/recruitment')}}" target="_self">Tuyển dụng</a></li>
       <li><a href="{{URL::to('/contact')}}" target="_blank">Liên hệ</a></li> 
 @endsection
 @section('content')
@@ -40,9 +40,14 @@
   <h2 class="title-group">Lĩnh vực hoạt động</h2>
   <div class="row flex flex-wrap">
     
-    <div class="col-xs-12 col-sm-6 col-lg-3 item-wrap">
+    <div class="">
       @foreach($categories as $cate)
-      <div class="item"><figure><!-- <a class="" href="" target="_self"> <img src="./Lĩnh vực hoạt động - Công ty Cổ phần Trí Tri_files/cm_group1.png" alt="Consulting"></a> --><figcaption><h1><!-- <a href="#" target="_self"> -->{{$cate->category_name}}<!-- </a> --></h1></figcaption></figure></div>
+        <div class="col-xs-12 col-sm-6 col-lg-3 item-wrap">
+      <div class=""><figure><!-- <a class="hv-zoom" href="http://www.tritri.org/linh-vuc-hoat-dong/consulting" target="_self"><img src="" alt="Consulting"></a>
+ -->
+        <figcaption><h3><a href="{{ url('field/'.$cate->id) }}" target="_self"><b style="text-align: left; font-size: 20px">{{ $cate->category_name }}</b><!-- </a> --></h3></figcaption></figure></div>
+    </div>
+
     @endforeach
 
     </div>

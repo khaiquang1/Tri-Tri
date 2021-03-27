@@ -43,7 +43,7 @@
                                         @endif
                                     </td>
                                     <td>{{ $feature->title }}</td>
-                                    <td>{{ $feature->desc }}</td>
+                                    <td>@php echo html_entity_decode($feature->desc)  @endphp</td>
                                     <td><a href="{{ $feature->btn_link }}">{{ $feature->btn_link }}</a> </td>
                                     <td>{{ $feature->order }}</td>
                                     <td>
@@ -120,7 +120,7 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label for="desc">{{ __('content.desc') }}</label>
-                                    <textarea name="desc" class="form-control" id="desc"></textarea>
+                                    <textarea id="summernote" name="desc" class="form-control" required></textarea>
                                 </div>
                             </div>
                             <div class="col-md-12">

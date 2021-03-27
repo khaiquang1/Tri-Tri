@@ -395,11 +395,11 @@
                     <div class="container">
                         <div class="overlay"></div>
                         <div class="btn-showmenu hidden-xl-up"><i class="fa fa-bars" aria-hidden="true"></i></div>
-                        <div class="sitelogo Module"><a href="http://www.tritri.org/"><img alt="" src="{{asset('assets/frontend/image/logo.png')}}"></a></div>
+                        <div class="sitelogo Module"><a href="{{URL::to('/')}}"><img alt="" src="{{asset('assets/frontend/image/logo.png')}}"></a></div>
                         <div class="colright clearfix">
                             <div class="btn-closemenu hidden-xl-up"><span class="lnr lnr-cross"></span></div>
                             <div class="sitelogo-mobile hidden-xl-up">
-                                <div class="sitelogo Module"><a href="http://www.tritri.org/"><img alt="" src="{{asset('assets/frontend/image/logo.png')}}"></a></div>
+                                <div class="sitelogo Module"><a href="{{URL::to('/')}}"><img alt="" src="{{asset('assets/frontend/image/logo.png')}}"></a></div>
                             </div>
                             <nav class="menu">
                                 <div class="Module Module-42"><div class="ModuleContent"><ul class="menulink nav clearfix">
@@ -451,7 +451,7 @@
       <a href="" title="">
         <img src="{{asset('assets/frontend/image/home_banner.png')}}" alt="">
       </a>
-      <div data-animation="fadeInUp" data-delay="0.7s" class="container content-wrap">
+       <div data-animation="fadeInUp" data-delay="0.7s" class="container content-wrap">
          @foreach ($features as $feature)
         <div class="content-box">
          
@@ -459,16 +459,15 @@
          
             <?php
                 $feature_desc = $feature->desc;
-                $desc = substr("$feature_desc",0,500);
+                $desc = substr("$feature_desc",0,700);
             ?>
-          <div class="desc">{{ $desc."..." }}</div>
+          <div class="desc">@php echo html_entity_decode($desc)  @endphp...</div>
      
           <a class="btn-readmore" href="{{ url('tin-tuc-dau-trang/'.$feature->id) }}" title="">Xem thêm</a>
           @endforeach
           </div>
         </div>
 
-        
       </div>
     </div>
   </div>
@@ -546,9 +545,9 @@
     @foreach ($categories as $category)
 
     <div class="col-xs-12 col-sm-6 col-lg-3 item-wrap">
-      <div class="item"><figure><!-- <a class="hv-zoom" href="http://www.tritri.org/linh-vuc-hoat-dong/consulting" target="_self"><img src="" alt="Consulting"></a>
+      <div class=""><figure><!-- <a class="hv-zoom" href="http://www.tritri.org/linh-vuc-hoat-dong/consulting" target="_self"><img src="" alt="Consulting"></a>
  -->
-        <figcaption><h3><!-- <a href="{{ url('field/'.$category->category_slug) }}" target="_self"> --><b>{{ $category->category_name }}</b><!-- </a> --></h3></figcaption></figure></div>
+        <figcaption><h3><a href="{{ url('field/'.$category->id) }}" target="_self"><b style="text-align: left; font-size: 20px">{{ $category->category_name }}</b><!-- </a> --></h3></figcaption></figure></div>
     </div>
 
     @endforeach
@@ -557,22 +556,28 @@
 </div></div></div></div></div><div class="block-video"><div class="container"><div class="Module Module-149"><div class="ModuleContent"><div class="block-homevideo">
   <h3 class="title">Video</h3>
   <div class="row flex flex-wrap">
+
+    @foreach($videos as $video)
     <div class="col-xs-12 col-sm-6 col-lg-4 item-wrap">
       <div class="item">
         <figure>
-          <a class="fancy-video hv-zoom" title="Chân ngôn LTC - Lãnh Đạo Tỉnh Thức 4.0, MiniMBA 4.0 Thực Chiến" href="https://www.youtube.com/embed/ySJ1L3ClM0o">
-            <img src="{{asset('assets/frontend/image/0.jpg')}}" alt="Chân ngôn LTC - Lãnh Đạo Tỉnh Thức 4.0, MiniMBA 4.0 Thực Chiến">
+          <a class="fancy-video hv-zoom" title="{{$video->title}}" href="{{$video->link}}">
+           @if (!empty($video->image))
+                     <img class="image-size img-fluid" src="{{ asset('uploads/img/videos/'.$video->image) }}" alt="blog image">
+                      @else
+                     <img class="image-size img-fluid" src="{{ asset('uploads/img/dummy/no-image.jpg') }}" alt="no image">
+                      @endif
           </a>
           <figcaption>
             <h3>
-              <a class="fancy-video" title="Chân ngôn LTC - Lãnh Đạo Tỉnh Thức 4.0, MiniMBA 4.0 Thực Chiến" href="https://www.youtube.com/embed/ySJ1L3ClM0o" rel="http://img.youtube.com/vi/ySJ1L3ClM0o/0.jpg">Chân ngôn LTC - Lãnh Đạo Tỉnh Thức 4.0, MiniMBA 4.0 Thực Chiến</a>
+              <a class="fancy-video" title="{{$video->title}}" href="{{$video->link}}" rel="">{{$video->title}}</a>
             </h3>
           </figcaption>
         </figure>
       </div>
     </div>
     
-    
+    @endforeach
 
   </div>
 </div>
@@ -662,7 +667,7 @@
                         <div class="footer-bot">
                             <div class="container">
                                 <div class="copyright">
-                                    Copyright © 2017 - 2021 Công ty Cổ phần Trí Tri. <a href="http://www.canhcam.vn/dich-vu" target="_blank">Thiết kế website</a> bởi <a target="_blank" href="http://www.canhcam.vn/">Cánh Cam</a>
+                                    Copyright © 2017 - 2021 Công ty Cổ phần Trí Tri. <a href="https://melink.vn/" target="_blank">Thiết kế website</a> bởi <a target="_blank" href="https://melink.vn/">FasterCRM</a>
                                 </div>
                             </div>
                         </div>

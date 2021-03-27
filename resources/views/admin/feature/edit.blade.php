@@ -23,7 +23,8 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label for="desc">{{ __('content.desc') }}</label>
-                                    <textarea type="text" name="desc" class="form-control" id="desc">{{ $feature->desc }}</textarea>
+                                   <!--  <textarea type="text" name="desc" class="form-control" id="desc">{{ $feature->desc }}</textarea> -->
+                                    <textarea id="summernote" name="desc" class="form-control" required>@php echo html_entity_decode($feature->desc)  @endphp</textarea>
                                 </div>
                             </div>
                             <div class="col-md-12">

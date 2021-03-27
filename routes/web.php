@@ -70,9 +70,15 @@ Route::get('/news', [\App\Http\Controllers\Frontend\HomeController::class, 'news
 Route::get('/contact', [\App\Http\Controllers\Frontend\HomeController::class, 'contact_us']);//add
 Route::get('/recruitment', [\App\Http\Controllers\Frontend\HomeController::class, 'recruitments']);//add
 
+Route::get('/video', [\App\Http\Controllers\Admin\VideoController::class, 'index']);
+Route::post('/save-video', [App\Http\Controllers\Admin\VideoController::class, 'store']);
+
+
 //News
 Route::get('/news/{slug}', [App\Http\Controllers\Frontend\BlogController::class, 'show_new_slug']);
-// Route::get('/field/{slug_new}', [App\Http\Controllers\Frontend\BlogController::class, 'operation']);
+
+Route::get('delete-video/{id}', [App\Http\Controllers\Admin\VideoController::class, 'delete_video']);
+Route::get('/field/{id}', [App\Http\Controllers\Frontend\HomeController::class, 'field']);
 
 Route::get('/y-kien-cam-nhan-cua-khach-hang', [\App\Http\Controllers\Frontend\HomeController::class, 'testimonials']);//add
 Route::get('/tin-tuc-dau-trang/{id}', [App\Http\Controllers\Frontend\HomeController::class, 'new_leader']);

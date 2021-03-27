@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th3 24, 2021 lúc 11:30 AM
+-- Thời gian đã tạo: Th3 27, 2021 lúc 05:40 AM
 -- Phiên bản máy phục vụ: 10.4.18-MariaDB
 -- Phiên bản PHP: 7.4.16
 
@@ -74,12 +74,12 @@ CREATE TABLE `blogs` (
 --
 
 INSERT INTO `blogs` (`id`, `language_id`, `category_name`, `category_id`, `title`, `desc`, `blog_image`, `author`, `slug`, `view`, `status`, `tag`, `created_at`, `updated_at`) VALUES
-(8, 1, 'chien luoc', 1, 'BẢY CĂN BỆNH VỀ QUẢN TRỊ DOANH NGHIỆP Ở VIỆT NAM MÀ CÁC DOANH NHÂN DOANH CHỦ THƯỜNG MẮC PHẢI', '<p><span style=\"font-weight:bolder;font-size:20px;color:rgb(51,51,51);font-family:Helvetica, sans-serif;\">BỆNH THỨ NHẤT: CHIẾN LƯỢC</span><br></p><div>Bệnh này rất nhiều doanh nghiệp mắc phải, nhất là các doanh nghiệp vừa và nhỏ, thể hiện cụ thể là thiếu hoặc chưa tự đánh giá doanh nghiệp mình về 5 vấn đề lớn, gồm: thứ nhất là điểm mạnh, yếu (nội lực của doanh nghiệp) về quản trị, văn hóa doanh nghiệp, nguồn lực. Thứ hai là những cơ hội và thách thức về kinh tế, công nghệ, khách hàng và đối thủ cạnh tranh. </div>', '1616466642-54378989_857414947938938_6176216177702862848_n.png', 'Tri tri', 'bay-can-benh-ve-quan-tri-doanh-nghiep-o-viet-nam-ma-cac-doanh-nhan-doanh-chu-thuong-mac-phai-1', 2, 1, '/', '2021-03-22 19:30:43', '2021-03-24 02:42:15'),
+(8, 1, 'chien luoc', 1, 'BẢY CĂN BỆNH VỀ QUẢN TRỊ DOANH NGHIỆP Ở VIỆT NAM MÀ CÁC DOANH NHÂN DOANH CHỦ THƯỜNG MẮC PHẢI', '<p><span style=\"font-weight:bolder;font-size:20px;color:rgb(51,51,51);font-family:Helvetica, sans-serif;\">BỆNH THỨ NHẤT: CHIẾN LƯỢC</span><br></p><div>Bệnh này rất nhiều doanh nghiệp mắc phải, nhất là các doanh nghiệp vừa và nhỏ, thể hiện cụ thể là thiếu hoặc chưa tự đánh giá doanh nghiệp mình về 5 vấn đề lớn, gồm: thứ nhất là điểm mạnh, yếu (nội lực của doanh nghiệp) về quản trị, văn hóa doanh nghiệp, nguồn lực. Thứ hai là những cơ hội và thách thức về kinh tế, công nghệ, khách hàng và đối thủ cạnh tranh. </div>', '1616466642-54378989_857414947938938_6176216177702862848_n.png', 'Tri tri', 'bay-can-benh-ve-quan-tri-doanh-nghiep-o-viet-nam-ma-cac-doanh-nhan-doanh-chu-thuong-mac-phai-1', 3, 1, '/', '2021-03-22 19:30:43', '2021-03-26 20:26:03'),
 (9, 1, 'chien luoc', 1, 'BẢY CĂN BỆNH VỀ QUẢN TRỊ DOANH NGHIỆP Ở VIỆT NAM MÀ CÁC DOANH NHÂN DOANH CHỦ THƯỜNG MẮC PHẢI', '<p><span style=\"font-weight:bolder;font-size:20px;color:rgb(51,51,51);font-family:Helvetica, sans-serif;\">BỆNH THỨ NHẤT: CHIẾN LƯỢC</span><br></p><div>Bệnh này rất nhiều doanh nghiệp mắc phải, nhất là các doanh nghiệp vừa và nhỏ, thể hiện cụ thể là thiếu hoặc chưa tự đánh giá doanh nghiệp mình về 5 vấn đề lớn, gồm: thứ nhất là điểm mạnh, yếu (nội lực của doanh nghiệp) về quản trị, văn hóa doanh nghiệp, nguồn lực. Thứ hai là những cơ hội và thách thức về kinh tế, công nghệ, khách hàng và đối thủ cạnh tranh. </div>', '1616466836-54378989_857414947938938_6176216177702862848_n.png', 'Tri tri', 'bay-can-benh-ve-quan-tri-doanh-nghiep-o-viet-nam-ma-cac-doanh-nhan-doanh-chu-thuong-mac-phai-2', 13, 1, '/', '2021-03-22 19:33:56', '2021-03-24 01:12:12'),
 (10, 1, 'doanh nghiep', 2, 'Công nghê CRM', '<p>sdadasdas</p>', NULL, 'Tri tri', 'cong-nghe-crm', 11, 1, '/', '2021-03-22 20:23:57', '2021-03-23 02:15:51'),
 (11, 1, 'doanh nghiep', 2, 'bbb', '<p>vcccccc</p>', '1616469869-54378989_857414947938938_6176216177702862848_n.png', 'Tri tri', 'bbb', 1, 1, 'z', '2021-03-22 20:24:29', '2021-03-23 01:53:47'),
 (12, 1, 'doanh nghiep', 2, 'Công nghê CRM', '<p>12 a sd  a a a a </p>', '1616488071-54378989_857414947938938_6176216177702862848_n.png', 'Nguyễn Quang Khải', 'cong-nghe-crm-1', 2, 0, '/', '2021-03-23 01:27:53', '2021-03-23 02:15:54'),
-(13, 1, 'doanh nghiep', 2, 'aâ a  â a', '<p>s  s  </p>', '1616488115-54378989_857414947938938_6176216177702862848_n.png', 'Tri tri', 'aa-a-a-a', 1, 1, '/', '2021-03-23 01:28:35', '2021-03-23 02:16:00');
+(13, 1, 'doanh nghiep', 2, 'aâ a  â a', '<p>s  s  </p>', '1616733494-2.jpg', 'Tri tri', 'aa-a-a-a', 1, 1, '/', '2021-03-23 01:28:35', '2021-03-25 21:38:14');
 
 -- --------------------------------------------------------
 
@@ -139,7 +139,10 @@ CREATE TABLE `categories` (
 
 INSERT INTO `categories` (`id`, `language_id`, `category_name`, `order`, `status`, `category_slug`, `created_at`, `updated_at`) VALUES
 (1, 1, 'chien luoc', 1, 1, 'chien-luoc', '2021-03-21 21:21:48', '2021-03-21 21:21:48'),
-(2, 1, 'doanh nghiep', 2, 1, 'doanh-nghiep', '2021-03-21 21:22:04', '2021-03-21 21:22:04');
+(2, 1, 'doanh nghiep', 2, 1, 'doanh-nghiep', '2021-03-21 21:22:04', '2021-03-21 21:22:04'),
+(3, 1, 'chien luoc 2', 3, 1, 'chien-luoc-2', '2021-03-25 22:39:44', '2021-03-25 22:39:44'),
+(4, 1, 'chien luoc 4', 5, 1, 'chien-luoc-4', '2021-03-25 22:39:55', '2021-03-25 22:39:55'),
+(5, 1, 'chien luoc 6', 6, 1, 'chien-luoc-6', '2021-03-25 22:40:06', '2021-03-25 22:40:06');
 
 -- --------------------------------------------------------
 
@@ -515,6 +518,13 @@ CREATE TABLE `counters` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Đang đổ dữ liệu cho bảng `counters`
+--
+
+INSERT INTO `counters` (`id`, `language_id`, `icon`, `timer`, `desc`, `order`, `created_at`, `updated_at`) VALUES
+(1, 1, '', 3, 'as  a a a', 1, '2021-03-26 00:02:37', '2021-03-26 00:02:37');
+
 -- --------------------------------------------------------
 
 --
@@ -586,8 +596,7 @@ CREATE TABLE `features` (
 --
 
 INSERT INTO `features` (`id`, `language_id`, `feature_image`, `title`, `desc`, `btn_link`, `order`, `created_at`, `updated_at`) VALUES
-(1, 1, NULL, 'BẢY CĂN BỆNH VỀ QUẢN TRỊ DOANH NGHIỆP Ở VIỆT NAM MÀ CÁC DOANH NHÂN DOANH CHỦ THƯỜNG MẮC PHẢI', 'BỆNH THỨ NHẤT: CHIẾN LƯỢC\r\nBệnh này rất nhiều doanh nghiệp mắc phải, nhất là các doanh nghiệp vừa và nhỏ, thể hiện cụ thể là thiếu hoặc chưa tự đánh giá doanh nghiệp mình về 5 vấn đề lớn, gồm: thứ nhất là điểm mạnh, yếu (nội lực của doanh nghiệp) về quản trị, văn hóa doanh nghiệp, nguồn lực. Thứ hai là những cơ hội và thách thức về kinh tế, công nghệ, khách hàng và đối thủ cạnh tranh.', '', 1, '2021-03-22 18:44:51', '2021-03-22 21:50:42'),
-(2, 1, '1616474215-54378989_857414947938938_6176216177702862848_n.png', 'Công nghê CRM', 'ádsadasdasdsada', 'a', 2, '2021-03-22 21:36:55', '2021-03-22 21:36:55');
+(5, 1, '1616737885-54378989_857414947938938_6176216177702862848_n.png', 'BẢY CĂN BỆNH VỀ QUẢN TRỊ DOANH NGHIỆP Ở VIỆT NAM MÀ CÁC DOANH NHÂN DOANH CHỦ THƯỜNG MẮC PHẢI', '<p style=\"box-sizing: inherit; border: 0px; font-size: 15px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: rgb(102, 102, 102); font-family: Helvetica, sans-serif;\">Companies shifted quickly and unexpectedly to remote work in early 2020, but leaders planning for a post-pandemic future have an opportunity to take a more intentional, strategic approach to remote work.&nbsp; Most likely this will involve revisiting a number of 1) company policies and 2) management practices.&nbsp; The authors examine key emerging trends in these areas and suggest a number of questions leaders should ask themselves as they plan for their organization’s optimal mix of remote work.</p><p style=\"box-sizing: inherit; border: 0px; font-size: 15px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: rgb(102, 102, 102); font-family: Helvetica, sans-serif;\">Virtually all projections anticipate the post-pandemic workforce will be relatively more remote — that is, nearly all firms will experience an increase in remote work relative to their pre-pandemic baseline levels.</p><p style=\"box-sizing: inherit; border: 0px; font-size: 15px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: rgb(102, 102, 102); font-family: Helvetica, sans-serif;\">As pandemic restrictions ease, company leaders need to make decisions about how to achieve an optimal remote work strategy. Unlike the reactive shift that began abruptly in early 2020, the coming shift can be proactive and intentional. And yet, in a recent PWC survey of 133 US executives, nearly one-third described their approach to post-pandemic remote work as “going with the flow.”</p><p style=\"box-sizing: inherit; border: 0px; font-size: 15px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: rgb(102, 102, 102); font-family: Helvetica, sans-serif;\">Rather than simply shifting operations “back to normal,” we urge leaders to think about how they can leverage recent remote-work experiences to intentionally plan for a remote/hybrid workforce in the future. Leaders must think strategically about their remote work policies and practices going forward. And, whether you lead a company or a small team, now is the time to start planning.</p><p style=\"box-sizing: inherit; border: 0px; font-size: 15px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: rgb(102, 102, 102); font-family: Helvetica, sans-serif;\">Our research, executive education, and corporate advisory experience suggests that the key decisions leaders will face fall into two main categories: company policies and management practices. Below, we take a look at key emerging trends in each of these categories.</p><p style=\"box-sizing: inherit; border: 0px; font-size: 15px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: rgb(102, 102, 102); font-family: Helvetica, sans-serif;\">Company policies</p><p style=\"box-sizing: inherit; border: 0px; font-size: 15px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: rgb(102, 102, 102); font-family: Helvetica, sans-serif;\">A proactive implementation of remote work may require updating company policies to fit the needs of a dispersed workforce. As companies reconsider existing policies, they’ll need to address the following questions.</p><p style=\"box-sizing: inherit; border: 0px; font-size: 15px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: rgb(102, 102, 102); font-family: Helvetica, sans-serif;\">What’s the right mix of remote work for your organization?</p><p style=\"box-sizing: inherit; border: 0px; font-size: 15px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: rgb(102, 102, 102); font-family: Helvetica, sans-serif;\">Possible scenarios include a primarily remote, hybrid (with employees in the office part-time, typically two or three days per week), or a primarily in-office setting. To determine the optimal policy for your organization, leaders should factor in the following strategic considerations:</p><p style=\"box-sizing: inherit; border: 0px; font-size: 15px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: rgb(102, 102, 102); font-family: Helvetica, sans-serif;\">Nature of the work. Independent tasks — that do not rely heavily on collaboration or coordination with others — are ideal for remote work. Highly collaborative work can also be successful remotely, but requires more effort to manage. Obviously, some jobs simply cannot be performed remotely, but these may be fewer than you think. Companies continue to stretch the boundaries of remote work, with technologies like robotics and augmented reality being used to enable remote machine maintenance in manufacturing, and even some medical screenings and diagnosis functions.</p><p style=\"box-sizing: inherit; border: 0px; font-size: 15px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: rgb(102, 102, 102); font-family: Helvetica, sans-serif;\">Experience level of the workforce. New employees or those recently promoted typically benefit from an initial period of time in the office, both to build relationships and to gain the implicit knowledge that can be more easily absorbed in the office environment. If the workforce is primarily remote, synchronous virtual orientation sessions or on-site retreats may be beneficial.</p><p style=\"box-sizing: inherit; border: 0px; font-size: 15px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: rgb(102, 102, 102); font-family: Helvetica, sans-serif;\">Employee preferences. Individual choices should be taken into consideration given differences in personalities and preferences for remote work. Although some employees may indicate preferences now, those conversations should be revisited as work patterns and routines normalize.</p><p style=\"font-size:15px;color:rgb(102,102,102);font-family:Helvetica, sans-serif;\">As pandemic restrictions ease, company leaders need to make decisions about how to achieve an optimal remote work strategy. Unlike the reactive shift that began abruptly in early 2020, the coming shift can be proactive and intentional. And yet, in a recent PWC survey of 133 US executives, nearly one-third described their approach to post-pandemic remote work as “going with the flow.”</p>', '#', 0, '2021-03-25 22:27:32', '2021-03-25 23:02:42');
 
 -- --------------------------------------------------------
 
@@ -877,7 +886,8 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (51, '2020_12_15_190411_create_galleries_table', 1),
 (52, '2021_02_05_064120_create_color_options_table', 1),
 (53, '2021_02_05_084011_add_color_option_to_menu_keywords_table', 1),
-(54, '2021_02_05_084302_add_color_option_to_content_six_group_keywords_table', 1);
+(54, '2021_02_05_084302_add_color_option_to_content_six_group_keywords_table', 1),
+(55, '2021_03_26_071903_create_videos', 2);
 
 -- --------------------------------------------------------
 
@@ -898,6 +908,14 @@ CREATE TABLE `pages` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `pages`
+--
+
+INSERT INTO `pages` (`id`, `language_id`, `page_title`, `desc`, `breadcrumb_image`, `display_footer_menu`, `status`, `order`, `page_slug`, `created_at`, `updated_at`) VALUES
+(4, 1, 'Tuyen dung', '<p>a </p><p> </p><p>as</p><p>a</p><p> </p><p>a</p><p> a</p><p><br></p><p>a </p><p>a</p>', '1616737094-2.jpg', 0, 1, 1, 'tuyen-dung', '2021-03-25 22:38:14', '2021-03-25 22:38:14'),
+(5, 1, 'Tuyen dung 222', '<p>a  a aa a</p>', NULL, 0, 1, 1, 'tuyen-dung-222', '2021-03-25 23:19:50', '2021-03-25 23:19:50');
 
 -- --------------------------------------------------------
 
@@ -1103,11 +1121,8 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('3kPRtVN4qzL3a2p1cVXk9JErXifJpG8bDxjq5CMS', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiR2x5eE9UeUpYcURVSDdZSEJ3Ukh6a21leGt6REpYV0NTRnFHYTRvdyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6OTc6Imh0dHA6Ly9sb2NhbGhvc3Qvc2VydmljZXNvdXJjZTEvcHVibGljL2Fzc2V0cy9mcm9udGVuZC9QZHdiUXUtdmNTWi5qcy50JUUxJUJBJUEzaSUyMHh1JUUxJUJCJTkxbmciO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX19', 1616520726),
-('EuJ6FlP0h6TWwvXEJNHCHvF7V4m5EtwAcAQGLJBD', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoibVpTMkRIbmhHYTJiNHFPcjMxeU51b2N0V052cFdBMFFUamJQU29iOSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6OTc6Imh0dHA6Ly9sb2NhbGhvc3Qvc2VydmljZXNvdXJjZTEvcHVibGljL2Fzc2V0cy9mcm9udGVuZC84eFZHdDdsdWQyTC5qcy50JUUxJUJBJUEzaSUyMHh1JUUxJUJCJTkxbmciO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX19', 1616494372),
-('g7961uUvipULuZSXw1k4W1wkpoVfpa6NRWUDyejr', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoicWhMZ2RNc3ZlVENyank3V0NJV3JSU2FyQWtkZzB3cW9KRlNwNGo4ayI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MTAyOiJodHRwOi8vbG9jYWxob3N0L3NlcnZpY2Vzb3VyY2UxL3B1YmxpYy9hc3NldHMvZnJvbnRlbmQvc2RrLXNlcnZlci0xLjAuMC5qcy50JUUxJUJBJUEzaSUyMHh1JUUxJUJCJTkxbmciO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX19', 1616581071),
-('KRL241iFy9OCr7dNFJ5n7wLSo6ykSGohv0g2QLXj', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoidUdERzV4Y3NsbHJuNlNVMWVJVUFsUHdwQjhwM2FhdmhNb294OEJrQyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6OTc6Imh0dHA6Ly9sb2NhbGhvc3Qvc2VydmljZXNvdXJjZTEvcHVibGljL2Fzc2V0cy9mcm9udGVuZC8zZ0tJdzIwenBQeC5qcy50JUUxJUJBJUEzaSUyMHh1JUUxJUJCJTkxbmciO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX19', 1616569296),
-('zl7XfezMoMeLDlZNU7hXAtt8l4c2nhkqDmciqTyb', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiVlh5OFRNdTZncnN2TWdtWldIUDgxWmtXQUNKWVFWaER6MmlVTk5lRyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6OTc6Imh0dHA6Ly9sb2NhbGhvc3Qvc2VydmljZXNvdXJjZTEvcHVibGljL2Fzc2V0cy9mcm9udGVuZC9Kb3BadGR0aThkcS5qcy50JUUxJUJBJUEzaSUyMHh1JUUxJUJCJTkxbmciO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX19', 1616519153);
+('1DCHtNXHGGaqvZnEcljp2otmVuEwpSzo13LRwVUT', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoibHBsRml0dFZUNnI4blVDQXdGV0dXeGVUUTAzZmJrU2lNcXMyWVZxWSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6OTc6Imh0dHA6Ly9sb2NhbGhvc3Qvc2VydmljZXNvdXJjZTEvcHVibGljL2Fzc2V0cy9mcm9udGVuZC9uTHlaNmJZaFNOdS5qcy50JUUxJUJBJUEzaSUyMHh1JUUxJUJCJTkxbmciO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX19', 1616816492),
+('E1H7luvopztJMmPZhEL27RZwXjhNNWPVGV7LXt6o', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiVG40Z0dDazZ5cXBJeDlQZTBnbklFc3BKZ2pXTmJlN3dEV1hDdUJiNiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6OTc6Imh0dHA6Ly9sb2NhbGhvc3Qvc2VydmljZXNvdXJjZTEvcHVibGljL2Fzc2V0cy9mcm9udGVuZC9VZFM3QW1kM2FYSS5qcy50JUUxJUJBJUEzaSUyMHh1JUUxJUJCJTkxbmciO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX19', 1616819990);
 
 -- --------------------------------------------------------
 
@@ -1325,6 +1340,30 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `two_factor_secret`, `two_factor_recovery_codes`, `remember_token`, `current_team_id`, `profile_photo_path`, `created_at`, `updated_at`) VALUES
 (1, 'Admin', 'info@melink.vn', NULL, '$2y$10$9F3FHXJqhgGUuEgRvedZae87Mua7cleqnV5GoE1vIInOtYRX8d/Km', NULL, NULL, 'RoKz3NqDRYLEiXbnOX8W83BZfuO4fOlgOQaT6f5cVN5WoD4SWsHTYvyQnX1l', NULL, '1615847905-Icon-App-40x40@1x.png', '2021-02-05 08:30:10', '2021-03-15 19:03:46');
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `videos`
+--
+
+CREATE TABLE `videos` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `image` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `title` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `link` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `order` int(11) NOT NULL,
+  `category_id` int(11) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `videos`
+--
+
+INSERT INTO `videos` (`id`, `image`, `title`, `link`, `order`, `category_id`, `created_at`, `updated_at`) VALUES
+(9, '54378989_857414947938938_6176216177702862848_n35.png', 'Video thu 1', 'https://www.youtube.com/watch?v=WrXl_BRgzuE', 2, 4, NULL, NULL);
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -1685,6 +1724,12 @@ ALTER TABLE `users`
   ADD UNIQUE KEY `users_email_unique` (`email`);
 
 --
+-- Chỉ mục cho bảng `videos`
+--
+ALTER TABLE `videos`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT cho các bảng đã đổ
 --
 
@@ -1698,7 +1743,7 @@ ALTER TABLE `abouts`
 -- AUTO_INCREMENT cho bảng `blogs`
 --
 ALTER TABLE `blogs`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT cho bảng `blog_sections`
@@ -1716,7 +1761,7 @@ ALTER TABLE `breadcrumbs`
 -- AUTO_INCREMENT cho bảng `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT cho bảng `colors`
@@ -1788,7 +1833,7 @@ ALTER TABLE `content_two_group_keywords`
 -- AUTO_INCREMENT cho bảng `counters`
 --
 ALTER TABLE `counters`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT cho bảng `failed_jobs`
@@ -1812,7 +1857,7 @@ ALTER TABLE `faq_sections`
 -- AUTO_INCREMENT cho bảng `features`
 --
 ALTER TABLE `features`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT cho bảng `frontend_one_group_keywords`
@@ -1860,13 +1905,13 @@ ALTER TABLE `messages`
 -- AUTO_INCREMENT cho bảng `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
 
 --
 -- AUTO_INCREMENT cho bảng `pages`
 --
 ALTER TABLE `pages`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT cho bảng `personal_access_tokens`
@@ -1987,6 +2032,12 @@ ALTER TABLE `testimonial_sections`
 --
 ALTER TABLE `users`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT cho bảng `videos`
+--
+ALTER TABLE `videos`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- Các ràng buộc cho các bảng đã đổ

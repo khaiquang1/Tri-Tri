@@ -641,7 +641,6 @@ class ComposerStaticInita7db3eb73cf22704e2574f90c6be15a0
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\Frontend\\BlogController' => __DIR__ . '/../..' . '/app/Http/Controllers/Frontend/BlogController.php',
         'App\\Http\\Controllers\\Frontend\\CommentController' => __DIR__ . '/../..' . '/app/Http/Controllers/Frontend/CommentController.php',
-        'App\\Http\\Controllers\\Frontend\\GalleryController' => __DIR__ . '/../..' . '/app/Http/Controllers/Frontend/GalleryController.php',
         'App\\Http\\Controllers\\Frontend\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/Frontend/HomeController.php',
         'App\\Http\\Controllers\\Frontend\\PageController' => __DIR__ . '/../..' . '/app/Http/Controllers/Frontend/PageController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',

@@ -9,7 +9,7 @@
       <li><a  href="{{URL::to('/about-us')}}" target="_self">Giới thiệu</a></li>
       <li><a href="{{URL::to('/fields-of-operation')}}" target="_self">Lĩnh vực hoạt động</a></li>
       <li><a href="{{URL::to('/news')}}" target="_self">Tin tức</a></li>
-      <li><a class="active"  href="{{URL::to('/contact')}}" target="_self">Tuyển dụng</a></li>
+      <li><a class="active"  href="{{URL::to('/recruitment')}}" target="_self">Tuyển dụng</a></li>
       <li><a href="{{URL::to('/contact')}}" target="_blank">Liên hệ</a></li> 
 @endsection
 @section('content')
@@ -75,10 +75,10 @@
 
 </div>
       </div>
-      @endforeach
-
-      <div class="col-xs-12 col-md-4 col-lg-3">
+     @endforeach
+        </div>
       </div>
+     
     </div>
   </section>
 </div>

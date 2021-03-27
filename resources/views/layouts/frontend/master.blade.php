@@ -393,11 +393,11 @@
                     <div class="container">
                         <div class="overlay"></div>
                         <div class="btn-showmenu hidden-xl-up"><i class="fa fa-bars" aria-hidden="true"></i></div>
-                        <div class="sitelogo Module"><a href="http://www.tritri.org/"><img alt="" src="{{asset('assets/frontend/image/logo.png')}}"></a></div>
+                        <div class="sitelogo Module"><a href="{{URL::to('/')}}"><img alt="" src="{{asset('assets/frontend/image/logo.png')}}"></a></div>
                         <div class="colright clearfix">
                             <div class="btn-closemenu hidden-xl-up"><span class="lnr lnr-cross"></span></div>
                             <div class="sitelogo-mobile hidden-xl-up">
-                                <div class="sitelogo Module"><a href="http://www.tritri.org/"><img alt="" src="{{asset('assets/frontend/image/logo.png')}}"></a></div>
+                                <div class="sitelogo Module"><a href="{{URL::to('/')}}"><img alt="" src="{{asset('assets/frontend/image/logo.png')}}"></a></div>
                             </div>
                             <nav class="menu">
                                 <div class="Module Module-42"><div class="ModuleContent"><ul class="menulink nav clearfix">
@@ -502,8 +502,8 @@
                         </div>
                         <div class="footer-bot">
                             <div class="container">
-                                <div class="copyright">
-                                    Copyright © 2017 - 2021 Công ty Cổ phần Trí Tri. <a href="http://www.canhcam.vn/dich-vu" target="_blank">Thiết kế website</a> bởi <a target="_blank" href="http://www.canhcam.vn/">Cánh Cam</a>
+                                 <div class="copyright">
+                                    Copyright © 2017 - 2021 Công ty Cổ phần Trí Tri. <a href="https://melink.vn/" target="_blank">Thiết kế website</a> bởi <a target="_blank" href="https://melink.vn/">FasterCRM</a>
                                 </div>
                             </div>
                         </div>

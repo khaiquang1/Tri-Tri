@@ -62,17 +62,16 @@ class BlogController extends Controller
     public function store(Request $request)
     {
         // Form validation
-        $request->validate([
-            'category_id'   =>  'integer|required',
-            'title'   =>  'required',
-            'desc'   =>  'required',
-            'status'   =>  'integer|in:0,1',
+        // $request->validate([
+        //     'category_id'   =>  'integer|required',
+        //     'title'   =>  'required',
+        //     'desc'   =>  'required',
+        //     'status'   =>  'integer|in:0,1',
             
-            'blog_image'   =>  'mimes:svg,png,jpeg,jpg|max:2048'
-        ]);
+        //     'blog_image'   =>  'mimes:svg,png,jpeg,jpg|max:2048'
+        // ]);
 
-        // Get All Request
-        $input = $request->all();
+      
 
         if($request->hasFile('blog_image')){
 
@@ -148,7 +147,7 @@ class BlogController extends Controller
             'desc'   =>  'required',
             'status'   =>  'integer|in:0,1',
             
-            'blog_image'   =>  'mimes:svg,png,jpeg,jpg|max:2048'
+            'blog_image'   =>  'mimes:svg,png,jpeg,jpg|max:2048',
         ]);
 
         $blog = Blog::find($id);

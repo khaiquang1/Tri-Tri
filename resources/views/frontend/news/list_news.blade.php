@@ -9,7 +9,7 @@
       <li><a  href="{{URL::to('/about-us')}}" target="_self">Giới thiệu</a></li>
       <li><a href="{{URL::to('/fields-of-operation')}}" target="_self">Lĩnh vực hoạt động</a></li>
       <li><a class="active" href="{{URL::to('/news')}}" target="_self">Tin tức</a></li>
-      <li><a href="{{URL::to('/contact')}}" target="_self">Tuyển dụng</a></li>
+      <li><a href="{{URL::to('/recruitment')}}" target="_self">Tuyển dụng</a></li>
       <li><a href="{{URL::to('/contact')}}" target="_blank">Liên hệ</a></li> 
 @endsection
 @section('content')
@@ -61,7 +61,7 @@
                 <div class="autoCutStr_120">
                    <?php
                 $feature_desc = $recent_post->desc;
-                $desc = substr("$feature_desc",0,500);
+                $desc = substr("$feature_desc",0,200);
             ?>
             @php echo html_entity_decode($desc)  @endphp
                 </div>
