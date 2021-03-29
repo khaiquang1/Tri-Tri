@@ -24,6 +24,7 @@
                                 <th scope="col">#</th>
                                 <th>{{ __('content.image') }}</th>
                                 <th>{{ __('content.title') }}</th>
+                                <th>Slug</th>
                                 <th>{{ __('content.category') }}</th>
                                 <th>{{ __('content.post_date') }}</th>
                                 <th>{{ __('content.view') }}</th>
@@ -46,6 +47,7 @@
                                         @endif
                                     </td>
                                     <td>{{ $blog->title }}</td>
+                                    <td>{{$blog->slug}}</td>
                                     <td><span class="badge badge-pill badge-dark">@if (isset($blog->category->category_name)) {{ $blog->category->category_name }} @else {{ $blog->category_name }} @endif</span></td>
                                     <td>{{ Carbon\Carbon::parse($blog->created_at)->format('d.m.Y') }}</td>
                                     <td>{{ $blog->view }}</td>

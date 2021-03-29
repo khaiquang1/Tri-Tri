@@ -54,7 +54,6 @@
                                     <input id="author" name="author" type="text" class="form-control">
                                 </div>
                             </div>
-
                             <div class="col-xl-12">
                                 <div class="form-group">
                                     <label for="status" class="col-form-label">{{ __('content.status') }} </label>
@@ -65,9 +64,6 @@
                                     </select>
                                 </div>
                             </div>
-                             
-
-
                             <div class="col-md-12">
                                 <button type="submit" class="btn btn-primary mr-2">{{ __('content.submit') }}</button>
                             </div>

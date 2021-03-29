@@ -30,6 +30,13 @@
                                     <input id="title" name="title" type="text" class="form-control" value="{{ $blog->title }}" required>
                                 </div>
                             </div>
+
+                             <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="title">Slug <span class="text-red">*</span></label>
+                                    <input id="title" name="slug" type="text" class="form-control" value="{{ $blog->slug }}" required>
+                                </div>
+                            </div>
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label for="summernote">{{ __('content.desc') }}<span class="text-red">*</span></label>

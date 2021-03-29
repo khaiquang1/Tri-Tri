@@ -46,7 +46,7 @@
           
           <div class="container"><div class="contact-wrap"><div class="row flex flex-wrap"><div class="col-xs-12 col-md-4"><div class="contact-info Module Module-53"><div class="ModuleContent"><h3>Trụ sở chính</h3>
 <em class="fa fa-home" aria-hidden="true"></em> Địa chỉ: 59F Trần Bình Trọng, Phường 5, Quận Bình Thạnh, TPHCM, Việt Nam<br>
-<em class="fa fa-phone" aria-hidden="true"></em> Điện thoại: Viber - Zalo (+84) 0915 489 819 /&nbsp; (+84) 0919 212 166<br>
+<em class="fa fa-phone" aria-hidden="true"></em> Điện thoại: Viber - Zalo (+84) 0915 489 819 /&nbsp; (+84) 0919 212 16<br>
 Facebook: Trí Tri Group&nbsp;<br>
 Email: ha.nguyen1@tritri.org<br>
 <ul>
