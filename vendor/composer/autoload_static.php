@@ -638,6 +638,7 @@ class ComposerStaticInita7db3eb73cf22704e2574f90c6be15a0
         'App\\Http\\Controllers\\Admin\\TeamSectionController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/TeamSectionController.php',
         'App\\Http\\Controllers\\Admin\\TestimonialController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/TestimonialController.php',
         'App\\Http\\Controllers\\Admin\\TestimonialSectionController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/TestimonialSectionController.php',
+        'App\\Http\\Controllers\\Admin\\VideoController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/VideoController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\Frontend\\BlogController' => __DIR__ . '/../..' . '/app/Http/Controllers/Frontend/BlogController.php',
         'App\\Http\\Controllers\\Frontend\\CommentController' => __DIR__ . '/../..' . '/app/Http/Controllers/Frontend/CommentController.php',

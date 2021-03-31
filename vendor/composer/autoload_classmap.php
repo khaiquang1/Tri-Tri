@@ -55,6 +55,7 @@ return array(
     'App\\Http\\Controllers\\Admin\\TeamSectionController' => $baseDir . '/app/Http/Controllers/Admin/TeamSectionController.php',
     'App\\Http\\Controllers\\Admin\\TestimonialController' => $baseDir . '/app/Http/Controllers/Admin/TestimonialController.php',
     'App\\Http\\Controllers\\Admin\\TestimonialSectionController' => $baseDir . '/app/Http/Controllers/Admin/TestimonialSectionController.php',
+    'App\\Http\\Controllers\\Admin\\VideoController' => $baseDir . '/app/Http/Controllers/Admin/VideoController.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
     'App\\Http\\Controllers\\Frontend\\BlogController' => $baseDir . '/app/Http/Controllers/Frontend/BlogController.php',
     'App\\Http\\Controllers\\Frontend\\CommentController' => $baseDir . '/app/Http/Controllers/Frontend/CommentController.php',

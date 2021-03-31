@@ -316,6 +316,15 @@
                     </li>
                 @endif
                 
+                @if ($section_arr['team_section'] == 1)
+                    <li class="nav-item {{ (request()->is('admin/team/create') ||
+                                            request()->is('admin/team/*/edit')) ? 'active' : '' }}">
+                        <a class="nav-link" href="{{ url('admin/team/create') }}">
+                            <i class="fas fa-users menu-icon"></i>
+                            <span class="menu-title">Giới thiệu BU</span>
+                        </a>
+                    </li>
+                @endif
                
                     @if ($section_arr['project_section'] == 1)
                         <li class="nav-item {{ (request()->is('admin/project/create') ||

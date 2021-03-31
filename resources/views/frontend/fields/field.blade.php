@@ -39,6 +39,11 @@
 	
 					
 					<div class="container Module Module-162"><div class="ModuleContent"><div class="block-zoneFieldWork">
+          @foreach($about_bu as $bu)
+             <section class="desc-fieldWork">
+              @php echo html_entity_decode($bu->desc)  @endphp
+             </section>
+             @endforeach
   <section class="fieldwork-news">
     <h2 class="title-page">Tin tức</h2>
     <div class="row flex flex-wrap">

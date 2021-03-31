@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th3 29, 2021 lúc 06:00 AM
+-- Thời gian đã tạo: Th3 31, 2021 lúc 06:53 AM
 -- Phiên bản máy phục vụ: 10.4.18-MariaDB
 -- Phiên bản PHP: 7.4.16
 
@@ -45,6 +45,29 @@ CREATE TABLE `abouts` (
 
 INSERT INTO `abouts` (`id`, `language_id`, `title`, `desc`, `btn_name`, `btn_link`, `about_image`, `created_at`, `updated_at`) VALUES
 (1, 1, 'GIỚI THIỆU', '<p style=\"box-sizing: inherit; border: 0px; font-size: 15px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: rgb(102, 102, 102); font-family: Helvetica, sans-serif; text-align: justify;\">Với khát vọng và niềm tin sâu sắc, Trí Tri tích cực tư duy và kiên trì hành động thực hiện sứ mệnh:</p><p style=\"box-sizing: inherit; border: 0px; font-size: 15px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: rgb(102, 102, 102); font-family: Helvetica, sans-serif; text-align: justify;\">- Giúp từng cá nhân, các tổ chức đạt hiệu quả tối ưu trong công việc công ty và cuộc sống của mình bằng cách “đánh thức Tiềm năng thành Khả năng, rèn luyện Khả năng thành Kỹ năng, tích hợp Kỹ năng tỏa sáng thành Tài năng”để Cá nhân Cảm được Hạnh phúc, Tổ chức Nhận được Thành công.</p><p style=\"box-sizing: inherit; border: 0px; font-size: 15px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: rgb(102, 102, 102); font-family: Helvetica, sans-serif; text-align: justify;\">- Phát triển Trí Lực và Tâm Lực của cá nhân và Nâng cao Hiệu năng và Hiệu quả cho khách hàng – đối tác – nhà đầu tư thông qua những giải pháp độc đáo, tối ưu giá trị có Triết lý sâu sắc – Phương pháp thực tiễn, dễ hiểu, dễ áp dụng và dễ thành công, nhằm giải quyết các vấn đề về chất lượng nguồn nhân lực, chất lượng quản trị, chất lượng sống trong kinh doanh, công việc &amp; cuộc sống.</p><p style=\"box-sizing: inherit; border: 0px; font-size: 15px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: rgb(102, 102, 102); font-family: Helvetica, sans-serif; text-align: justify;\"><span style=\"box-sizing: inherit; font-weight: bolder; border: 0px; vertical-align: baseline; background: transparent;\">GIÁ TRỊ CỐT LÕI</span></p><p style=\"box-sizing: inherit; border: 0px; font-size: 15px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: rgb(102, 102, 102); font-family: Helvetica, sans-serif; text-align: justify;\">- Với Triết lý Tam Nghiệm (Trải – Chứng – Chiêm), phát triển Tam Lực (Thể - Trí - Tâm) Phương pháp Sinh Giáo Sinh Huấn cùng nhiều công cụ đặc sắc và hữu hiệu, Trí Tri giúp từng cá nhân, các đội nhóm và tổ chức gia tăng hiệu quả, tích hợp và pên thông để chủ động phát triển.</p><p style=\"box-sizing: inherit; border: 0px; font-size: 15px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: rgb(102, 102, 102); font-family: Helvetica, sans-serif; text-align: justify;\">- Tận Tâm - Chính Trực - Chuyên Nghiệp.</p><p style=\"box-sizing: inherit; border: 0px; font-size: 15px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: rgb(102, 102, 102); font-family: Helvetica, sans-serif; text-align: justify;\">- Đủ trẻ để có TÂM nhiệt huyết trong công việc, đủ lớn để có TẦM sâu sắc trong tư duy. Chiến lược, kế hoạch và hành động nhất quán phù hợp với đặc điểm riêng có của mỗi cá nhân và từng tổ chức.</p><p style=\"box-sizing: inherit; border: 0px; font-size: 15px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: rgb(102, 102, 102); font-family: Helvetica, sans-serif; text-align: justify;\">- Viễn kiến sâu, chiến lược sắc, giải pháp khát quát, kế hoạch cụ thể, hành động pên hoàn, pnh hoạt nhất quán, phương pháp thực học thực hành, sâu sát thực tiễn, kiên quyết, kiên trì và cam kết nhận lãnh và hoàn thành trách nhiệm.</p>', 'tri tri', 'tritri.org', '1616492773-2.jpg', '2021-03-23 02:46:13', '2021-03-23 02:47:05');
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `about_bus`
+--
+
+CREATE TABLE `about_bus` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `category_id` int(11) NOT NULL,
+  `desc` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `about_bus`
+--
+
+INSERT INTO `about_bus` (`id`, `category_id`, `desc`, `created_at`, `updated_at`) VALUES
+(15, 1, '<p>asdas</p><p>asd</p><p>ass</p>', NULL, NULL),
+(18, 3, '<p>asdsa</p><p>asdasd</p><p>asd</p><p>as</p><p>das</p><p><br></p>', NULL, NULL),
+(19, 2, '<h1 style=\"box-sizing: inherit; font-size: 1.25rem; margin-bottom: 30px; font-family: Helvetica, sans-serif; font-weight: 500; line-height: 1; color: rgb(51, 51, 51); padding-bottom: 15px; border: 0px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; text-transform: uppercase; position: relative; text-align: center;\">TỔNG QUAN TRÍ TRI CONSULTING</h1><p style=\"box-sizing: inherit; border: 0px; font-size: 15px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: rgb(51, 51, 51); font-family: Helvetica, sans-serif;\">Thành viên trụ cột của Trí Tri Group, chuyên Tư vấn tái cấu trúc, Quản trị chiến lược; Phát triển nguồn lực; Quản trị chuỗi cung ứng; Mua bán &amp; sáp nhập</p><p style=\"box-sizing: inherit; border: 0px; font-size: 15px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; color: rgb(51, 51, 51); font-family: Helvetica, sans-serif;\">Không chỉ là nhà cung cấp dịch vụ, chúng tôi luôn là ĐỐI TÁC TIN CẬY, đồng hành cùng khách hàng &amp; đối tác vượt gian khó đến thành công trong công tác thiết kế chiến lược, xây dựng kế hoạch, huấn luyện đội ngũ, triển khai thực hiện đảm bảo hiệu quả cao, hiệu năng tốt qua ứng dụng, đánh giá, hiệu chỉnh và hoàn thiện bằng các giải pháp tư vấn đơn giản mà sâu sắc, dễ hiểu, dễ nhớ, dễ áp dụng để thành công.</p><ul style=\"box-sizing: inherit; margin-right: -15px; margin-bottom: 30px; margin-left: -15px; border: 0px; font-size: 15px; vertical-align: baseline; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; list-style: none; position: relative; color: rgb(51, 51, 51); font-family: Helvetica, sans-serif;\"><li style=\"box-sizing: inherit; padding-right: 15px; padding-left: 30px; border: 0px; font-size: 0.9375rem; vertical-align: baseline; background: transparent; line-height: 1.4; float: left; width: 570px; position: relative;\">Quản trị chiến lược &amp; Tái cấu trúc</li><li style=\"box-sizing: inherit; padding-right: 15px; padding-left: 30px; border: 0px; font-size: 0.9375rem; vertical-align: baseline; background: transparent; line-height: 1.4; float: left; width: 570px; position: relative;\">Phát triển nguồn lực</li><li style=\"box-sizing: inherit; padding-right: 15px; padding-left: 30px; border: 0px; font-size: 0.9375rem; vertical-align: baseline; background: transparent; line-height: 1.4; float: left; width: 570px; position: relative;\">Marketing &amp; Sales</li><li style=\"box-sizing: inherit; padding-right: 15px; padding-left: 30px; border: 0px; font-size: 0.9375rem; vertical-align: baseline; background: transparent; line-height: 1.4; float: left; width: 570px; position: relative;\">Quản trị chuỗi cung ứng</li><li style=\"box-sizing: inherit; padding-right: 15px; padding-left: 30px; border: 0px; font-size: 0.9375rem; vertical-align: baseline; background: transparent; line-height: 1.4; float: left; width: 570px; position: relative;\">Mua bán &amp; Sát nhập</li><li style=\"box-sizing: inherit; padding-right: 15px; padding-left: 30px; border: 0px; font-size: 0.9375rem; vertical-align: baseline; background: transparent; line-height: 1.4; float: left; width: 570px; position: relative;\">Tư vấn khởi nghiệp &amp; Doanh nghiệp gia đình</li></ul>', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -888,7 +911,9 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (52, '2021_02_05_064120_create_color_options_table', 1),
 (53, '2021_02_05_084011_add_color_option_to_menu_keywords_table', 1),
 (54, '2021_02_05_084302_add_color_option_to_content_six_group_keywords_table', 1),
-(55, '2021_03_26_071903_create_videos', 2);
+(55, '2021_03_26_071903_create_videos', 2),
+(56, '2021_03_31_024719_create_about_b_u', 3),
+(57, '2021_03_31_030018_create_about_bus', 4);
 
 -- --------------------------------------------------------
 
@@ -1122,11 +1147,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('1DCHtNXHGGaqvZnEcljp2otmVuEwpSzo13LRwVUT', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoibHBsRml0dFZUNnI4blVDQXdGV0dXeGVUUTAzZmJrU2lNcXMyWVZxWSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6OTc6Imh0dHA6Ly9sb2NhbGhvc3Qvc2VydmljZXNvdXJjZTEvcHVibGljL2Fzc2V0cy9mcm9udGVuZC9uTHlaNmJZaFNOdS5qcy50JUUxJUJBJUEzaSUyMHh1JUUxJUJCJTkxbmciO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX19', 1616816492),
-('9iKhqCFbNDthxZq2shl0Ose1syNX8LJORjK0ronD', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiSDh6TXpCZlJPVjRKUGtUOWJlVmxVdnBnU3RiSllDM3R2T0lNUXRCWCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NzA6Imh0dHA6Ly9sb2NhbGhvc3Qvc2VydmljZXNvdXJjZTEvcHVibGljL2Fzc2V0cy9mcm9udGVuZC9QOExtWEtWdEFDYi5jc3MiO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX19', 1616898895),
-('E1H7luvopztJMmPZhEL27RZwXjhNNWPVGV7LXt6o', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiVG40Z0dDazZ5cXBJeDlQZTBnbklFc3BKZ2pXTmJlN3dEV1hDdUJiNiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6OTc6Imh0dHA6Ly9sb2NhbGhvc3Qvc2VydmljZXNvdXJjZTEvcHVibGljL2Fzc2V0cy9mcm9udGVuZC9VZFM3QW1kM2FYSS5qcy50JUUxJUJBJUEzaSUyMHh1JUUxJUJCJTkxbmciO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX19', 1616819990),
-('OoiiriZBrBr4wLO4QjbsNZUpzmjbTRqr6J3qDg6g', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiY3FwaHRPNDJ4SXdkNDdFNkhHRTFQTVM1ZzJ4MlE2MXdHWXNyZUFXbyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NzA6Imh0dHA6Ly9sb2NhbGhvc3Qvc2VydmljZXNvdXJjZTEvcHVibGljL2Fzc2V0cy9mcm9udGVuZC83cFZMQnZtRWpxei5jc3MiO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX19', 1616860039),
-('T0TqSQzAisRSCoDrnKB64kXCTm7zhSkCP8BCdLXl', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiZ29XZW1saFBLTFJKS2dIdHhhaHBCNmxma0tBUlpCbjlKbllycEhzVyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MTI3OiJodHRwOi8vbG9jYWxob3N0L3NlcnZpY2Vzb3VyY2UxL3B1YmxpYy9hc3NldHMvZnJvbnRlbmQvZGVmYXVsdC1lbWJlZC1yZW5kZXIuOTc1Y2JjYTRhMTY0MTdlMTc5ZmUuanMudCVFMSVCQSVBM2klMjB4dSVFMSVCQiU5MW5nIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1616988937);
+('jUT5ERzFxAlvrJbqwYWcDimQ56nKc0J4WJLvlMaQ', NULL, '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoibUdRWTN4SUpqckRETXoyVEZWR2hORWZPbDdmcmJvYmVKZVh4bWo0ciI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MTA1OiJodHRwOi8vbG9jYWxob3N0L1RyaS1UcmkvcHVibGljL2Fzc2V0cy9mcm9udGVuZC9lbWJlZC5iYTdkYzdjYzc0MGQ0NTI3ODljYS5qcy50JUUxJUJBJUEzaSUyMHh1JUUxJUJCJTkxbmciO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX19', 1617095785);
 
 -- --------------------------------------------------------
 
@@ -1266,6 +1287,13 @@ CREATE TABLE `teams` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Đang đổ dữ liệu cho bảng `teams`
+--
+
+INSERT INTO `teams` (`id`, `language_id`, `team_image`, `name`, `job`, `link_1`, `link_2`, `link_3`, `link_4`, `order`, `created_at`, `updated_at`) VALUES
+(1, 1, NULL, 'khai', 'SV', '', '', '', '', 0, '2021-03-30 20:28:47', '2021-03-30 20:28:47');
+
 -- --------------------------------------------------------
 
 --
@@ -1343,7 +1371,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `two_factor_secret`, `two_factor_recovery_codes`, `remember_token`, `current_team_id`, `profile_photo_path`, `created_at`, `updated_at`) VALUES
-(1, 'Admin', 'info@melink.vn', NULL, '$2y$10$9F3FHXJqhgGUuEgRvedZae87Mua7cleqnV5GoE1vIInOtYRX8d/Km', NULL, NULL, 'RoKz3NqDRYLEiXbnOX8W83BZfuO4fOlgOQaT6f5cVN5WoD4SWsHTYvyQnX1l', NULL, '1615847905-Icon-App-40x40@1x.png', '2021-02-05 08:30:10', '2021-03-15 19:03:46');
+(1, 'Admin', 'info@melink.vn', NULL, '$2y$10$9F3FHXJqhgGUuEgRvedZae87Mua7cleqnV5GoE1vIInOtYRX8d/Km', NULL, NULL, 'LskrUBTRqHv4VvyrD80gUIMBAnQu9UXxP1m5aUa4QnBhCBLNHD1YVtrWRo0j', NULL, '1615847905-Icon-App-40x40@1x.png', '2021-02-05 08:30:10', '2021-03-15 19:03:46');
 
 -- --------------------------------------------------------
 
@@ -1381,6 +1409,12 @@ INSERT INTO `videos` (`id`, `image`, `title`, `link`, `order`, `category_id`, `c
 ALTER TABLE `abouts`
   ADD PRIMARY KEY (`id`),
   ADD KEY `abouts_language_id_foreign` (`language_id`);
+
+--
+-- Chỉ mục cho bảng `about_bus`
+--
+ALTER TABLE `about_bus`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Chỉ mục cho bảng `blogs`
@@ -1746,6 +1780,12 @@ ALTER TABLE `abouts`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+-- AUTO_INCREMENT cho bảng `about_bus`
+--
+ALTER TABLE `about_bus`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+
+--
 -- AUTO_INCREMENT cho bảng `blogs`
 --
 ALTER TABLE `blogs`
@@ -1911,7 +1951,7 @@ ALTER TABLE `messages`
 -- AUTO_INCREMENT cho bảng `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 
 --
 -- AUTO_INCREMENT cho bảng `pages`
@@ -2013,7 +2053,7 @@ ALTER TABLE `sponsors`
 -- AUTO_INCREMENT cho bảng `teams`
 --
 ALTER TABLE `teams`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT cho bảng `team_sections`

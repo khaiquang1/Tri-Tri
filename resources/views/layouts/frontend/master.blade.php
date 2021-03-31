@@ -445,6 +445,30 @@
 
 
                  <footer class="footer">
+
+                    <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v10.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution="setup_tool"
+        page_id="176770689781943">
+      </div>
                         <div class="footer-top">
                             <div class="container">
                                 <div class="row flex flex-wrap">
@@ -581,6 +605,29 @@
         </script>
        
         </form>
+        
+             <!-- Load Facebook SDK for JavaScript -->
+                  <div id="fb-root"></div>
+                  <script>
+                    window.fbAsyncInit = function() {
+                      FB.init({
+                        xfbml            : true,
+                        version          : 'v10.0'
+                      });
+                    };
 
+                    (function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s); js.id = id;
+                    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+                    fjs.parentNode.insertBefore(js, fjs);
+                  }(document, 'script', 'facebook-jssdk'));</script>
 
-        <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div><div class="fb-customerchat fb_invisible_flow fb_iframe_widget" attribution="setup_tool" page_id="176770689781943" logged_in_greeting="Xin chào! Chúng tôi có thể hỗ trợ gì bạn?" logged_out_greeting="Xin chào! Chúng tôi có thể hỗ trợ gì bạn?" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=766305180482770&amp;attribution=setup_tool&amp;container_width=0&amp;local_state=%7B%22v%22%3A0%2C%22path%22%3A2%2C%22chatState%22%3A1%2C%22visibility%22%3A%22hidden%22%2C%22showUpgradePrompt%22%3A%22not_shown%22%7D&amp;locale=en_US&amp;logged_in_greeting=Xin%20ch%C3%A0o!%20Ch%C3%BAng%20t%C3%B4i%20c%C3%B3%20th%E1%BB%83%20h%E1%BB%97%20tr%E1%BB%A3%20g%C3%AC%20b%E1%BA%A1n%3F&amp;logged_out_greeting=Xin%20ch%C3%A0o!%20Ch%C3%BAng%20t%C3%B4i%20c%C3%B3%20th%E1%BB%83%20h%E1%BB%97%20tr%E1%BB%A3%20g%C3%AC%20b%E1%BA%A1n%3F&amp;page_id=176770689781943&amp;request_time=1616379513344&amp;sdk=joey"><span style="vertical-align: bottom; width: 1000px; height: 0px;"><iframe name="f13fefcf87f466" width="1000px" height="1000px" data-testid="dialog_iframe" title="" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="{{asset('assets/frontend/customerchat.html')}}" style="padding: 0px; position: fixed; z-index: 2147483646; border-radius: 16px; top: auto; width: 399px; background: none; bottom: 85px; max-height: 0px; right: 4px; margin-right: 12px; min-height: 0px;" class="fb_customer_chat_bounce_out_v2 anchor_right"></iframe></span></div><div class="fb_dialog  fb_dialog_advanced" style="overflow: visible; z-index: 2147483644;"><div class="fb_dialog_content"><iframe name="blank_f13fefcf87f466" width="60px" tabindex="-1" data-testid="bubble_iframe" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="{{asset('assets/frontend/bubble.html')}}" style="margin: 0px 12px; padding: 0px; position: fixed; z-index: 2147483644; bottom: 24px; top: auto; height: 60px; width: 60px; border-radius: 29px; box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px 0px; background: none; display: block; right: 12px;"></iframe><iframe name="unread_f13fefcf87f466" tabindex="-1" data-testid="unread_iframe" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="{{asset('assets/frontend/bubble(1).html')}}" style="bottom: 68px; position: fixed; width: 20px; height: 24px; z-index: 2147483645; border-radius: 4pt; background: none; right: 22px;"></iframe></div></div></div></body></html>
+                  <!-- Your Chat Plugin code -->
+                  <div class="fb-customerchat"
+                    attribution="setup_tool"
+                    page_id="176770689781943">
+                  </div>
+
+     </body></html>

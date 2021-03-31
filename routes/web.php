@@ -78,6 +78,8 @@ Route::post('/save-video', [App\Http\Controllers\Admin\VideoController::class, '
 Route::get('/news/{slug}', [App\Http\Controllers\Frontend\BlogController::class, 'show_new_slug']);
 
 Route::get('delete-video/{id}', [App\Http\Controllers\Admin\VideoController::class, 'delete_video']);
+Route::get('delete-BU/{id}', [App\Http\Controllers\Admin\TeamController::class, 'delete_bu']);
+
 Route::get('/field/{id}', [App\Http\Controllers\Frontend\HomeController::class, 'field']);
 
 Route::get('/y-kien-cam-nhan-cua-khach-hang', [\App\Http\Controllers\Frontend\HomeController::class, 'testimonials']);//add

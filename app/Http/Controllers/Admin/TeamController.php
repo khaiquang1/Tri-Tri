@@ -5,20 +5,24 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Admin\Team;
 use App\Models\Admin\TeamSection;
+use App\Models\Admin\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
+use DB;
 
 class TeamController extends Controller
 {
     public function create()
     {
-        // Retrieving a model
+       // Retrieving a model
         $language = getLanguage();
         $teams = Team::where('language_id', $language->id)->orderBy('id', 'desc')->get();
         $team_section = TeamSection::where('language_id', $language->id)->first();
+        $categories = Category::where('language_id', $language->id)->get();
 
-        return view('admin.team.create', compact('teams', 'team_section'));
+        return view('admin.team.create', compact('teams', 'team_section', 'categories'));
     }
+
 
     /**
      * Store a newly created resource in storage.
@@ -29,51 +33,18 @@ class TeamController extends Controller
     public function store(Request $request)
     {
         // Form validation
-        $request->validate([
-            'team_image' => 'mimes:svg,png,jpeg,jpg|max:2048',
-            'order' => 'required|integer',
-        ]);
+       $data = array();
+       $data['category_id'] = $request->category_id;
+       $data['desc'] = $request->desc;
+       DB::table('about_bus')->insert($data);
 
-        // Get All Request
-        $input = $request->all();
 
-        if($request->hasFile('team_image')){
 
-            // Get image file
-            $team_image = $request->file('team_image');
-
-            // Folder path
-            $folder = 'uploads/img/teams/';
-
-            // Make image name
-            $team_image_name = time().'-'.$team_image->getClientOriginalName();
-
-            // Upload image
-            $team_image->move($folder, $team_image_name);
-
-            // Set input
-            $input['team_image'] = $team_image_name;
-
-        } else {
-            // Set input
-            $input['team_image'] = null;
-        }
-
-        // Record to database
-        Team::create([
-            'language_id' => getLanguage()->id,
-            'team_image' => $input['team_image'],
-            'name' => $input['name'],
-            'job' => $input['job'],
-            'link_1' => $input['link_1'],
-            'link_2' => $input['link_2'],
-            'link_3' => $input['link_3'],
-            'link_4' => $input['link_4'],
-            'order' => $input['order']
-        ]);
-
-        return redirect()->route('team.create')
-            ->with('success', 'content.created_successfully');
+       $categories = DB::table('categories')->get();
+       $BU = DB::table('about_bus')
+       ->join('categories', 'categories.id', '=', 'about_bus.category_id')
+       ->get();
+       return view('admin.team.create', compact('BU', 'categories'));  
     }
 
     /**
@@ -163,4 +134,16 @@ class TeamController extends Controller
         return redirect()->route('team.create')
             ->with('success', 'content.deleted_successfully');
     }
+
+    public function delete_bu($id)
+    {
+         DB::table('about_bus')->where('category_id',$id)->delete();
+
+            $categories = DB::table('categories')->get();
+            $BU = DB::table('about_bus')
+            ->join('categories', 'categories.id', '=', 'about_bus.category_id')
+            ->get();
+       return view('admin.team.create', compact('BU', 'categories'));  
+    }
+           
 }

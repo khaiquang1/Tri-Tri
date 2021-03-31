@@ -170,12 +170,13 @@ class HomeController extends Controller
     public function field($id){
 
         $language = getSiteLanguage();
+        $about_bu = DB::table('about_bus')->where('category_id',$id)->get();
         $videos = DB::table('videos')->where('category_id',$id)->get(); 
         $news = DB::table('blogs')
         ->where('category_id',$id)->get();
         $categories = Category::where('language_id', $language->id)->where('id',$id)->get();
         // $categories = DB::table('categories')->where('id',$id)->get();
-        return view('frontend.fields.field', compact('videos', 'news', 'categories'));
+        return view('frontend.fields.field', compact('videos', 'news', 'categories', 'about_bu'));
     }
 
    
